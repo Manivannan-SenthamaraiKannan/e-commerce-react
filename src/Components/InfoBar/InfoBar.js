@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../Styles/InfoBar.css'
-import { Link } from 'react-router-dom';
 
 const InfoBar = () => {
     return (
@@ -10,8 +9,8 @@ const InfoBar = () => {
                     {/* Header- top -left */}
                     <div className='col-lg-6 col-md-6'>
                         <div className='header__top__left'>
-                            <ul>
-                                <li><i class="bi bi-envelope"></i>vegman@gmail.com</li>
+                            <ul className='list_style_left'>
+                                <li><i class="bi bi-envelope"></i> vegman@gmail.com</li>
                                 <li>Free Shipping for all Order of &#x20b9;699</li>
                             </ul>
                         </div>
@@ -20,21 +19,24 @@ const InfoBar = () => {
                     <div className='col-lg-6 col-md-6'>
                         <div className='header__top__right'>
                             <div className="header__top__right__social">
-                                <Link to={{ pathname: "https://www.facebook.com" }}><i class="bi bi-facebook"></i></Link>
-                                <Link to={{ pathname: "https://www.whatsapp.com" }}><i class="bi bi-whatsapp"></i></Link>
-                                <Link to={{ pathname: "https://www.instagram.com" }}><i class="bi bi-instagram"></i></Link>
+                                <a href='#!'><i class="bi bi-facebook" style={{ color: "black" }}></i></a>
+                                <a href='#!'><i class="bi bi-whatsapp" style={{ color: "black" }}></i></a>
+                                <a href='#!'><i class="bi bi-instagram" style={{ color: "black" }}></i></a>
                             </div>
                             <div className='header__top__right__language'>
-                                <img src="src/Images/icons8-india-27.png" alt='Flag' />
-                                <div>English</div>
-                                <span class="arrow_carrot-down"></span>
-                                <ul>
-                                    <li><a href="#!">Spanis</a></li>
-                                    <li><a href="#!">English</a></li>
-                                </ul>
+                                <li class="nav-item dropdown" style={{ "list-style-type" : "none"}}>
+                                    <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="flag flag-us"></i></span> English
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#!">Spanish</a></li>
+                                        <li><a class="dropdown-item" href="#!">English</a></li>
+                                    </ul>
+                                </li>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#!"><i class="bi bi-user"></i> Login</a>
+                                <a href="#!" className='nav-link'><i class="bi bi-person" style={{ color: "black" }}></i>
+                                <span> Login</span></a>
                             </div>
                         </div>
                     </div>
