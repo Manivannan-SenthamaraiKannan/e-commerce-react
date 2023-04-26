@@ -1,5 +1,9 @@
 import React from 'react'
-import payment from '../Images/payment.png'
+import Amex from '../Images/Amex.png'
+import GooglePay from '../Images/GooglePay.png'
+import MasterCard from '../Images/MasterCard.png'
+import Paytm from '../Images/Paytm.png'
+import Visa from '../Images/Visa.png'
 import "../Styles/Footer.css"
 
 const Footer = () => {
@@ -7,9 +11,13 @@ const Footer = () => {
         <div className='page-footer'>
             {/* Footer Head */}
             <div className='payment'>
-                <p>Payment Method</p>
+                <div><p>Payment Method</p></div>
                 <div>
-                    <img src={payment} alt='payment'></img>
+                    <img src={Amex} alt='payment'></img>
+                    <img src={GooglePay} alt='payment'></img>
+                    <img src={MasterCard} alt='payment'></img>
+                    <img src={Paytm} alt='payment'></img>
+                    <img src={Visa} alt='payment'></img>
                 </div>
             </div>
             {/* Footer Content */}
