@@ -21,9 +21,9 @@ const Footer = () => {
                 </div>
             </div>
             {/* Footer Content */}
-            <div className="container-fluid">
+            <div className="container">
                 <div className="py-5">
-                    <div className="row">
+                    <div className="row justify-content-center">
                         <div className="col-6 col-md-2 mb-3">
                             <h5>VegMan</h5>
                             <ul className="nav flex-column">
